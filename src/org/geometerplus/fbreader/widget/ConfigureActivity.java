@@ -134,8 +134,8 @@ public class ConfigureActivity extends Activity {
 		final AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
 		final RemoteViews remoteViews = new RemoteViews(this.getPackageName(), R.layout.widget);
 		
-		ZLTextPosition zltp = myCollection.getStoredPosition(book.getId());
-		final int percent = Math.round(100*zltp.getCharIndex());
+	//	ZLTextPosition zltp = myCollection.getStoredPosition(book.getId());
+		final int percent = 50;
 		
 		if (withBar) {
 			remoteViews.setViewVisibility(R.id.progress, View.VISIBLE);
