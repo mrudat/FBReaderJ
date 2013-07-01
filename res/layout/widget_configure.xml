@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/current_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Current book" />
+
+        <RadioButton
+            android:id="@+id/choose_a_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a book" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/with_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bar" />
+
+    <CheckBox
+        android:id="@+id/with_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="ok" />
+
+</LinearLayout>

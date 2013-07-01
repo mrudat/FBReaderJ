@@ -34,7 +34,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 import android.util.Xml;
 
-class XMLSerializer extends AbstractSerializer {
+public class XMLSerializer extends AbstractSerializer {
 	@Override
 	public String serialize(BookQuery query) {
 		final StringBuilder buffer = new StringBuilder();
