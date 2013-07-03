@@ -143,7 +143,7 @@ public class LibraryService extends Service {
 				myCollection.books(SerializerUtil.deserializeBookQuery(query))
 			);
 		}
-
+		
 		public boolean hasBooks(String query) {
 			return myCollection.hasBooks(SerializerUtil.deserializeBookQuery(query).Filter);
 		}
@@ -272,6 +272,10 @@ public class LibraryService extends Service {
 
 		public void saveHighlightingStyle(String style) {
 			myCollection.saveHighlightingStyle(SerializerUtil.deserializeStyle(style));
+		}
+		
+		public void saveCovers() {
+			myCollection.saveCovers();
 		}
 	}
 
